@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "alias": "timezone.now.sh",
   "builds": [
     { "src": "api/convert/index.js", "use": "@now/node" },
     { "src": "api/list/index.js", "use": "@now/node" },

@@ -6,7 +6,9 @@ module.exports = (req, res) => {
   const { d, t } = query
 
   res.writeHead(200, {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
+    'Cache-Control': 'no-cache'
   })
   res.end(JSON.stringify({
     date: convertToTimeZone(new Date(d), { timeZone: t })
