@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/convert/index.js", "use": "@now/node" },
+    { "src": "api/list/index.js", "use": "@now/node" },
+    { "src": "index.html", "use": "@now/static" }
+  ]
+}

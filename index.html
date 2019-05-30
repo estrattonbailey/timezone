@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timezone</title>
+    <meta name='description' content='Microservice utility to convert an ISO date string to a specific timezone'/>
+    <link rel='stylesheet' href='https://unpkg.com/svbstrate'/>
+  </head>
+  <body>
+    <main class='f aic jcc px1' style='height: 100vh; color: #333'>
+      <div class='py1 mxa x' style='max-width: 600px'>
+        <h1 class='h2'>timezone.now.sh</h1>
+        <p class='pb075'>Microservice utility to convert an ISO date string to a specific timezone</p>
+
+        <div class='pb1'>
+          <h4>usage</h4>
+          <pre class='p1' style='max-width: 100%;overflow: auto;background: #333;color: #fff;'><code>const date = new Date().toISOString()
+const timezone = 'America/New_York'
+fetch(`https://timezone.now.sh/api/convert?d=${date}&t=${timezone}`)</code></pre>
+        </div>
+
+        <h4>endpoints</h4>
+        <a href='/api/list'><pre>https://timezone.now.sh/api/list</pre></a>
+        <a href='/api/convert?d=2019-05-30T13:16:34.212Z&t=Asia/Pyongyang'><pre>https://timezone.now.sh/api/convert?d={date}&t={timezone}</pre></a>
+      </div>
+    </main>
+  </body>
+</html>
